@@ -44,7 +44,8 @@ export class SurePetCareClient {
       }
     }
 
-    return resp.json();
+    const { data } = await resp.json();
+    return data;
   }
 
   public getPets = async (): Promise<Pet[]> => {
