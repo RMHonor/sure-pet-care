@@ -1,5 +1,5 @@
 {
-  "name": "sure-pet-care-api",
+  "name": "sure-pet-care-client",
   "version": "0.0.3",
   "description": "API client for Sure Pet Care",
   "main": "./dist/index.js",

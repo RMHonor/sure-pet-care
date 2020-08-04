@@ -57,7 +57,7 @@ export class SurePetCareClient {
   public getPetByName = async (name: string): Promise<Pet> => {
     const pets = await this.getPets();
 
-    const pet = pets.find((p) => p.name === name);
+    const pet = pets.find((p) => p.name.toLowerCase() === name.toLowerCase());
 
     if (!pet) {
       throw new Error('Pet not found');
